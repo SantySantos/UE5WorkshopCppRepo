@@ -37,6 +37,12 @@ AUE5WorkshopCppCharacter::AUE5WorkshopCppCharacter()
 
 }
 
+void AUE5WorkshopCppCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, "Hello World!");
+}
+
 //////////////////////////////////////////////////////////////////////////// Input
 
 void AUE5WorkshopCppCharacter::NotifyControllerChanged()
